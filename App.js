@@ -17,9 +17,11 @@ import {
   TouchableHighlight
 } from 'react-native';
 
+
 import { ViroVRSceneNavigator, ViroARSceneNavigator } from 'react-viro';
 
-import { EnterCode, Win } from './Screens/index';
+import { EnterCode, Win, StoryConcept } from './Screens/index';
+
 
 var sharedProps = {
   apiKey: 'C241B72B-6767-4B75-B539-497EDE918432'
@@ -35,7 +37,9 @@ export default class App extends Component {
   }
 
   render() {
-    return <StoryConcept />;
+    return (
+    <StoryConcept />
+    );
   }
 }
 
