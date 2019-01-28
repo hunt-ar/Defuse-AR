@@ -14,19 +14,16 @@ import {
   View,
   StyleSheet,
   PixelRatio,
-  TouchableHighlight,
+  TouchableHighlight
 } from 'react-native';
 
-import {
-  ViroVRSceneNavigator,
-  ViroARSceneNavigator
-} from 'react-viro';
+import { ViroVRSceneNavigator, ViroARSceneNavigator } from 'react-viro';
 
-import Win from './Screens/Basic-Screens/Win'
+import { EnterCode, Win } from './Screens/index';
 
 var sharedProps = {
-  apiKey: 'C241B72B-6767-4B75-B539-497EDE918432',
-}
+  apiKey: 'C241B72B-6767-4B75-B539-497EDE918432'
+};
 
 export default class App extends Component {
   constructor() {
@@ -34,13 +31,11 @@ export default class App extends Component {
 
     this.state = {
       sharedProps: sharedProps
-    }
+    };
   }
 
   render() {
-    return (
-    <Win />
-    );
+    return <StoryConcept />;
   }
 }
 
