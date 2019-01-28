@@ -21,7 +21,8 @@ import {
   ViroVRSceneNavigator,
   ViroARSceneNavigator
 } from 'react-viro';
-
+import Home from './Screens/Basic-Screens/Home'
+import StoryConcept from './Screens/Basic-Screens/StoryConcept'
 import Win from './Screens/Basic-Screens/Win'
 
 var sharedProps = {
@@ -39,7 +40,7 @@ export default class App extends Component {
 
   render() {
     return (
-    <Win />
+    <StoryConcept />
     );
   }
 }
